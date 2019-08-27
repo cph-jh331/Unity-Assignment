@@ -6,7 +6,7 @@ using UnityEngine;
 public class ShootingHandler : MonoBehaviour
 {
     public GameObject bullet;
-    public GameObject player;
+    public GameObject playerBarrel;
     public float speed;
     public int timeoutDestructor;
 
@@ -23,7 +23,7 @@ public class ShootingHandler : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.LeftControl))
         {
-            GameObject clone = Instantiate(bullet, player.transform.position, Quaternion.identity);
+            GameObject clone = Instantiate(bullet, playerBarrel.transform.position, Quaternion.identity);
             clone.GetComponent<Rigidbody>().AddForce(transform.forward *speed);          
             Destroy(clone, timeoutDestructor);
         }
