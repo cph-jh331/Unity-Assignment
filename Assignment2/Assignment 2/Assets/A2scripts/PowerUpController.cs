@@ -19,7 +19,6 @@ public class PowerUpController : MonoBehaviour
         source.clip = pickUpSound;
         source.playOnAwake = false;
     }
-
     // Update is called once per frame
     void Update()
     {
