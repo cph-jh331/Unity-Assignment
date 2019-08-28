@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
 
-public class CarHitHandler : MonoBehaviour
+public class Timer : MonoBehaviour
 {
     public Text UItime;
     public float timer = 25f;
