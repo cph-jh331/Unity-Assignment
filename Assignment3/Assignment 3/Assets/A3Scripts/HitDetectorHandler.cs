@@ -14,7 +14,7 @@ public class HitDetectorHandler : MonoBehaviour
         {
             explositionFx = Instantiate(explositionFx, transform.position, transform.rotation);
             print("bummelum");
-            Destroy(explositionFx.gameObject, 2);
+            Destroy(explositionFx.gameObject, 3);
             Destroy(other.gameObject);
             Destroy(gameObject);
         }

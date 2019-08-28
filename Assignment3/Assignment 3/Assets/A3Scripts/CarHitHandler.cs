@@ -23,7 +23,7 @@ public class CarHitHandler : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("AddTime"))
+        if (other.CompareTag("AddTime"))
         {
             timer += 10f;
         }
