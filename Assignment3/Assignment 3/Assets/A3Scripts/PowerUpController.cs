@@ -29,7 +29,6 @@ public class PowerUpController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("PowerUp"))
         {
-            DOTweenModuleUI.DOJumpAnchorPos(countText.rectTransform, new Vector2(25, 150f), 10.0f, 1, 1, false);
             countText.rectTransform.DOShakePosition(1.5f, 10.0f, 10, 50, false, true); 
             other.gameObject.SetActive(false);
             count++;
